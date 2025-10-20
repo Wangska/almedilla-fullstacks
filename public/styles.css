@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+h1 { font-size: 28px; margin: 8px 0 24px; }
+h2 { font-size: 20px; margin: 24px 0 12px; }
+.muted { color: #94a3b8; }
+
+.alert {
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.alert-error { background: #7f1d1d; color: #fecaca; }
+
+.field { display: grid; gap: 8px; margin-bottom: 12px; }
+label { color: #cbd5e1; font-size: 12px; }
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+}
+button:hover { background: #2a3650; }
+button.danger { border-color: #7f1d1d; background: #3f1d1d; }
+button.danger:hover { background: #5a2323; }
+
+.note {
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #0b1220;
+}
+.note-form .actions { display: flex; gap: 8px; }
+.timestamps { margin-top: 8px; color: #94a3b8; font-size: 12px; display: flex; gap: 12px; }
+
+.new-note, .notes-list { margin-top: 16px; }
+
+
