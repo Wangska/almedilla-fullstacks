@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["docker"]
+
+[phases.build]
+cmds = ["docker build -t myapp ."]
+
+[start]
+cmd = "docker run -p 8000:80 myapp"
