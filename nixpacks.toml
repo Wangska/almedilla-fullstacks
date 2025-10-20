@@ -1,0 +1,18 @@
+[phases.setup]
+nixPkgs = ["php82", "php82Packages.composer", "nginx", "php82Packages.php-fpm"]
+
+[phases.install]
+cmds = [
+  "chmod +x /app/start.sh"
+]
+
+[phases.build]
+cmds = [
+  "echo 'Build phase completed'"
+]
+
+[start]
+cmd = "/app/start.sh"
+
+[variables]
+NGINX_ROOT = "/app/public"
