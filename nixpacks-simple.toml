@@ -1,0 +1,10 @@
+[phases.setup]
+nixPkgs = ["php82", "nginx"]
+
+[phases.install]
+cmds = [
+  "chmod +x start-simple.sh"
+]
+
+[start]
+cmd = "./start-simple.sh"

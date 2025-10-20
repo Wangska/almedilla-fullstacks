@@ -3,7 +3,7 @@ nixPkgs = ["php82", "php82Packages.composer", "nginx", "php82Packages.php-fpm"]
 
 [phases.install]
 cmds = [
-  "chmod +x /app/start.sh"
+  "chmod +x start.sh"
 ]
 
 [phases.build]
@@ -12,7 +12,4 @@ cmds = [
 ]
 
 [start]
-cmd = "/app/start.sh"
-
-[variables]
-NGINX_ROOT = "/app/public"
+cmd = "./start.sh"
